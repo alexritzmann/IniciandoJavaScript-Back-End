@@ -1,29 +1,18 @@
 import {Router} from "express";
+import clientsController from "../Controller/clientsController";
 
 const router = Router();
 
-router.get('/', (req, res) => {
-    res.send("Rota Inicial");
-})
+router.get('/', clientsController.index);
 
-router.get('/sobre', (req, res) => {
-    res.send("falando sobre mim!");
-})
+router.get('/sobre', clientsController.sobre);
 
-router.get('/contato', (req, res) => {
-    res.send("Contato");
-})
+router.get('/contato', clientsController.contato);
 
-router.get('/trablheconosco', (req, res) => {
-    res.send("<h1>Trabalhe Conosco</h1>");
-})
+router.get('/trabalheconosco', clientsController.trabalheconosco);
 
-router.get('/conteudo', (req, res) => {
-    res.send("<p>Conteúdo do site</p>");
-})
+router.get('/conteudo', clientsController.conteudo);
 
-router.get('/backend', (req, res) => {
-    res.send("<h1>Rota Back End</h1>");
-})
+router.get('/backend', clientsController.backend);
 
 export default router;

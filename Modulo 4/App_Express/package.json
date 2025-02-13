@@ -9,12 +9,14 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "express": "^4.21.2"
+    "bootstrap": "^5.3.3",
+    "express": "^4.21.2",
+    "pug": "^3.0.3"
   },
   "devDependencies": {
     "@types/express": "^5.0.0",
     "typescript": "^5.7.3"
-  }
+  },
+  "description": ""
 }

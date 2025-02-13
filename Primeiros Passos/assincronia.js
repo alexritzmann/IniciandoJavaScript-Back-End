@@ -39,6 +39,7 @@ function buscaDadosdoServidor()
     })    
 }
 
+
 buscaDadosdoServidor().
     then((mensagem) => {
         console.log(mensagem);
@@ -52,7 +53,7 @@ buscaDadosdoServidor().
 // outra fora de chamar a função assíncrona abaixo
 
 
-/*
+
 //daqui...
 const minhaFuncaoAssincrona = async () => {
     try{
@@ -65,7 +66,7 @@ const minhaFuncaoAssincrona = async () => {
 }
 minhaFuncaoAssincrona();
 //...até aqui.
-*/
+
 
 
 console.log("Fim da execução");
